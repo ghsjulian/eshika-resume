@@ -1,0 +1,391 @@
+@font-face {
+    font-family: "poppin-bold";
+    src: url("../fonts/Poppins-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: bold;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --hero: rgb(0, 34, 188);
+    --bg: rgb(169, 182, 185);
+    --text: rgb(37, 47, 49);
+    --white: rgb(255, 255, 255);
+    --blue: rgb(0, 112, 154);
+    --container: rgb(238, 238, 237);
+    --orange: rgb(159, 62, 0);
+    --contact-hover: rgb(98, 50, 0);
+    --download: rgb(0, 86, 118);
+    --hire-me: rgb(0, 103, 16);
+}
+html {
+    font-size: 90%;
+    font-family: poppin-bold, "Sans-Serif";
+}
+body {
+    background: var(--bg);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    position: relative;
+    width: 85vw;
+    height: 85vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--white);
+    border-radius: 15px;
+    border: 0.1px solid rgb(207, 210, 211);
+    box-shadow:
+        12px 13px 20px var(--bg),
+        -12px -13px 20px var(--bg);
+}
+header {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    right: 0;
+    padding: 1rem 1rem;
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 9000;
+    border-radius: 15px 15px 0 0;
+}
+header .logo {
+    display: flex;
+    margin: 0 0.3rem;
+    font-size: 23px;
+}
+.logo span {
+    color: var(--blue);
+    font-weight: 800;
+    margin-right: 5px;
+}
+.logo p {
+    color: var(--orange);
+    font-weight: 800;
+}
+header .links {
+    margin: 0 0.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+header .links a {
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--text);
+    font-size: 18px;
+    transition: 0.3s ease-in;
+    padding: 0.3rem 0;
+    margin: 0 0.5rem;
+}
+header .links a:hover {
+    border-bottom: 2px solid var(--blue);
+}
+header .links #contact {
+    background: var(--blue);
+    color: var(--white);
+    font-weight: 700;
+    border-radius: 12px;
+    padding: 0.5rem 1rem;
+    transition: 0.3s ease-in;
+}
+header .links #contact:hover {
+    border: none;
+    background: rgb(0, 47, 61);
+}
+.container {
+    padding: 1rem 1rem;
+    background: var(--container);
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    padding: 2.5rem 0;
+    border-radius: 15px;
+}
+header .links {
+    display: flex;
+}
+header #nav-btn {
+    display: none;
+}
+header .mobile-menu {
+    display: none;
+}
+.nav-closer {
+    display: none;
+}
+/*--> Hero Section <--*/
+.container .section {
+    padding: 1rem;
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(47%, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(auto, 1fr));
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.container .section .hero {
+    height: 100%;
+    padding: 1rem 0;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+}
+.section #hero-text {
+    align-items: left;
+    text-align: left;
+}
+#hero-text h2 {
+    color: var(--text);
+    font-weight: 900;
+    font-size: 26px;
+    margin: 0.5rem 0;
+}
+#hero-text h2 span {
+    color: var(--hero);
+    font-weight: 800;
+}
+#hero-text h2 #typing {
+    font-family: Sans-Serif;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid;
+    width: 0;
+    animation: blink 0.7s step-end infinite;
+}
+
+#hero-text h3 {
+    margin: 0.5rem 0;
+    color: rgb(190, 65, 0);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 2.3rem;
+}
+#hero-text p {
+    font-size: 18px;
+    color: var(--text);
+    font-weight: 500;
+    line-height: 2.5rem;
+    margin: 0.5rem 0;
+}
+#hero-text p span {
+    color: var(--blue);
+    font-weight: 800;
+}
+
+#hero-text .btn-area {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 1rem 0;
+    padding: 0.5rem 0;
+}
+#hero-text h4 {
+    font-size: 17px;
+    margin: 0.5rem 0;
+}
+#hero-text .link-area {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 0.7rem 0;
+    gap: 2rem;
+}
+.link-area a {
+    cursor: pointer;
+}
+.link-area a img {
+    object-fit: contain;
+    width: 32px;
+    height: 32px;
+}
+
+.btn-area a {
+    padding: 0.6rem 1.2rem;
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 900;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+.btn-area #hire {
+    background: var(--hire-me);
+}
+.btn-area #download {
+    margin-left: 1.5rem;
+    background: var(--download);
+}
+.btn-area #download:hover {
+    background: transparent;
+    border: 1px solid var(--download);
+    color: var(--download);
+}
+.btn-area #hire:hover {
+    background: transparent;
+    border: 1px solid var(--hire-me);
+    color: var(--hire-me);
+}
+.hero #eshika {
+    margin: 0.3rem auto;
+    width: 350px;
+    height: 350px;
+    object-fit: contain;
+    /*
+    width: 100%;
+    height: 100%;
+    */
+    border-radius: 50%;
+    border-style: dashed;
+    border-width: 4px;
+    border-color: rgb(0, 108, 186);
+    padding: 0.5rem;
+}
+
+/*--> Mobile Version Styling <--*/
+@media (max-width: 668px) {
+    body {
+        overflow: hidden;
+    }
+    main {
+        width: 100%;
+        height: 100vh;
+        border-radius: 0;
+    }
+    header {
+        padding: 0.8rem 0.5rem;
+    }
+    /* header .links {
+        display: none;
+    } */
+    header #nav-btn {
+        cursor: pointer;
+        display: block;
+        outline: none;
+        border: none;
+        background: transparent;
+    }
+    #nav-btn img {
+        object-fit: contain;
+        width: 32px;
+        height: 32px;
+    }
+    .container .section {
+        grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+        padding: 0.8rem 0.5rem;
+    }
+    header .links a:hover {
+        border: none;
+    }
+    header .links {
+        display: none;
+    }
+    .section :nth-child(2) {
+        order: -1;
+    }
+    .section #hero-text :nth-child(1) {
+        order: -1;
+    }
+    header .mobile-menu {
+        top: 0;
+        left: -5px;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: left;
+        text-align: left;
+        padding: 1.5rem 1rem;
+        position: fixed;
+        width: 60%;
+        height: 100vh;
+        background: var(--white);
+        z-index: 90000;
+        animation: 0.3s open-menu linear;
+        border-radius: 5px 5px 0 0;
+    }
+    .mobile-menu a {
+        width: 90%;
+        display: inline-block;
+        margin: 1.8rem 0;
+        padding: 0.8rem 0;
+    }
+    .mobile-menu a:hover {
+        border-bottom: none;
+        color: var(--orange);
+    }
+    .mobile-menu #contact {
+        margin: 5rem 0;
+        margin-left: -16px;
+    }
+    .nav-closer {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 40%;
+        height: 100vh;
+        background: rgba(67, 78, 78, 0.462);
+        z-index: 90000;
+        animation: closenav 3s linear;
+    }
+    .hero #eshika {
+        width: 310px;
+        height: 310px;
+    }
+}
+
+/*--> Creating Animation <--*/
+
+@keyframes open-menu {
+    from {
+        left: -65%;
+    }
+    to {
+        left: 0;
+    }
+}
+@keyframes closenav {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+@keyframes scaleup {
+    from {
+        transform: translateY(100%);
+        transition: 0.3s ease-in;
+        opacity: 0.2;
+    }
+    to {
+        transform: translate(0);
+        transition: 0.3s ease-in;
+        opacity: 1;
+    }
+}
