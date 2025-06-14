@@ -95,11 +95,13 @@ header .links a:hover {
     border-bottom: 2px solid var(--blue);
 }
 header .links #contact {
+    display: flex;
+    text-align: center;
     background: var(--blue);
     color: var(--white);
     font-weight: 700;
-    border-radius: 12px;
-    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    padding: 0.2rem 0.7rem;
     transition: 0.3s ease-in;
 }
 header .links #contact:hover {
@@ -156,7 +158,7 @@ header .mobile-menu {
 #hero-text h2 {
     color: var(--text);
     font-weight: 900;
-    font-size: 26px;
+    font-size: 25px;
     margin: 0.5rem 0;
 }
 #hero-text h2 span {
@@ -175,12 +177,12 @@ header .mobile-menu {
 #hero-text h3 {
     margin: 0.5rem 0;
     color: rgb(190, 65, 0);
-    font-size: 24px;
+    font-size: 23px;
     font-weight: 700;
     line-height: 2.3rem;
 }
 #hero-text p {
-    font-size: 18px;
+    font-size: 15px;
     color: var(--text);
     font-weight: 500;
     line-height: 2.5rem;
@@ -219,7 +221,7 @@ header .mobile-menu {
 }
 
 .btn-area a {
-    padding: 0.6rem 1.2rem;
+    padding: 0.3rem 1.2rem;
     text-decoration: none;
     color: var(--white);
     font-weight: 900;
@@ -249,15 +251,14 @@ header .mobile-menu {
     width: 350px;
     height: 350px;
     object-fit: contain;
-    /*
-    width: 100%;
-    height: 100%;
-    */
     border-radius: 50%;
     border-style: dashed;
-    border-width: 4px;
+    border-width: 3px;
     border-color: rgb(0, 108, 186);
+    mix-blend-mode: multiply;
     padding: 0.5rem;
+    filter: contrast(100%) saturate(170%);
+    /* filter: brightness(1.15) saturate(1.2); */
 }
 
 /*--> Mobile Version Styling <--*/
@@ -273,9 +274,6 @@ header .mobile-menu {
     header {
         padding: 0.8rem 0.5rem;
     }
-    /* header .links {
-        display: none;
-    } */
     header #nav-btn {
         cursor: pointer;
         display: block;
@@ -333,7 +331,7 @@ header .mobile-menu {
         color: var(--orange);
     }
     .mobile-menu #contact {
-        margin: 5rem 0;
+        margin: 4rem 0;
         margin-left: -16px;
     }
     .nav-closer {

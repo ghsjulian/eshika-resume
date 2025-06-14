@@ -1,4 +1,4 @@
-# Eshika Portfolio Resume
+## Eshika Portfolio Resume
 
 #### Project Name :  Portfolio For Eshika 
 
@@ -20,11 +20,11 @@
 
 #### Developer Email : <a href="email:ghsjulian@outlook.com" target="_blank"> ghsjulian@outlook.com </a>
 
-#### Live Demo : <a href="https://eshikaresume.netlify.app" target="_blank">View Demo </a>
+#### Live Demo : <a href="https://eshika-resume.netlify.app" target="_blank">View Demo </a>
 
 #### Start Date : 12 April 2025
 
-#### End Date : Working...
+#### End Date : 15 April 2025
 
 ---
 
@@ -72,13 +72,15 @@ open index.html
 
 #### Screensots And Demo (Desktop Mode) :
 
-<img src="/ss/desk.jpg" width="600" height="210px"/><br/><br/>
+<img src="/ss/desk2.jpg" width="" height=""/><br/><br/>
+<img src="/ss/desk.jpg" width="" height=""/><br/><br/>
 
 
 
 #### Screensots And Demo (Mobile Mode) :
 
-<img src="/ss/mobile.jpg" width="365px" height="710px"/><br/><br/>
+<img src="/ss/s1.jpg" width="" height="710px"/><br/><br/>
+<img src="/ss/mobile.jpg" width="" height="710px"/><br/><br/>
 
 
 #### Thank You !
